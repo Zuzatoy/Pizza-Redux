@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
 import { Onion } from '../Onion'
 import { Bacon } from '../Bacon'
@@ -36,22 +37,33 @@ const renderIngridient = (name, number = NUMBER_OF_INGREDIENTS) => {
     )
 }
 
-const Pizza = () => {
+const Pizza = ({ ingredients }) => {
+    const {
+        bacon,
+        cheese,
+        mushroom,
+        onion,
+        tomato,
+    } = ingredients;
     const tomatoes = renderIngridient('tomato')
-    const bacon = renderIngridient('bacon')
+    const bacons = renderIngridient('bacon')
     const mushrooms = renderIngridient('mushroom')
     const onions = renderIngridient('onion')
 
     return (
         <div className="pizza">
             <div className="crust" />
-            <Cheese />
-            {tomatoes}
-            {bacon}
-            {mushrooms}
-            {onions}
+            {cheese && <Cheese />}
+            {tomato && tomatoes}
+            {bacon && bacons}
+            {mushroom && mushrooms}
+            {onion && onions}
         </div>
     )
 }
 
-export default Pizza
+const mapStateToProps = (state) => ({
+    ingredients: state.ingredients
+}) 
+
+export default connect(mapStateToProps)(Pizza)

@@ -6,8 +6,8 @@ import Buttons from '../Buttons/Buttons';
 
 const App = () => (
   <div className="App">
-    <Pizza />
     <Buttons />
+    <Pizza />
   </div>
 );
 
