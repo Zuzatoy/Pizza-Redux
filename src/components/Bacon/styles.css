@@ -1,0 +1,29 @@
+.bacon {
+    margin:0 auto;
+    width:80px;
+  }
+  .red {
+    height:10px;
+    width:75px;
+    background:#c8102e;
+  }
+  .white {
+    height:8px;
+    width:75px;
+    background:#de6f81;
+  }
+  .bubble1 {
+    height:15px;
+    width:45px;
+    border-radius:100%;
+    background:#c8102e;
+    margin-top:-32px;
+  }
+  .bubble2 {
+    height:15px;
+    width:45px;
+    margin-left:31px;
+    margin-top:3px;
+    border-radius:30%;
+    background:#c8102e;
+  }

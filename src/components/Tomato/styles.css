@@ -1,0 +1,34 @@
+.tomato {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background:#D90404;
+    position:absolute;
+    z-index: 1;
+  }
+  
+  .tomato-1 {
+    top: 60px;
+    left: 250px;
+  }
+  
+  .tomato-2 {
+    top: 180px;
+    left: 80px;
+  }
+  
+  .tomato-3 {
+    top: 330px;
+    left: 260px;
+  }
+  
+  .tomato-4 {
+    top: 200px;
+    left: 340px;
+  }
+  
+  .tomato-5 {
+    top: 300px;
+    left: 120px;
+  }
+  
