@@ -1,7 +1,9 @@
 import React from 'react'
 
-const Onion = () => (
-    <div className="veg-2"></div>
+import './styles.css';
+
+const Onion = ({ className = '' }) => (
+    <div className={`onion ${className}`} />
 )
 
-export default Onion
+export default Onion;

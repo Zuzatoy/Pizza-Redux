@@ -1,0 +1,9 @@
+.cheese {
+    width: 400px;
+    height: 400px;
+    background: gold;
+    border-radius: 200px;
+    position: relative;
+    top: -450px;
+    left: 50px;
+  }

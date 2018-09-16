@@ -1,0 +1,14 @@
+.pizza {
+    position: relative;
+    top: 50px;
+    left: 450px;
+  }
+  
+  .crust {
+    width: 500px;
+    height: 500px;
+    background: burlywood;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+  }

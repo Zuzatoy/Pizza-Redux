@@ -1,7 +1,9 @@
 import React from 'react'
 
-const Cheese = () => (
-    <div className="cheese"></div>
+import './styles.css';
+
+const Cheese = ({ className = '' }) => (
+    <div className={`cheese ${className}`} />
 )
 
-export default Cheese
+export default Cheese;

@@ -1,15 +1,19 @@
 import React from 'react'
 
-import Onion from '../components/Onion'
-import Bacon from '../components/Bacon'
-import Mushroom from '../components/Mushroom'
-import Cheese from '../components/Cheese'
-import { Tomato } from '../components/Tomato'
+import { Onion } from '../Onion'
+import { Bacon } from '../Bacon'
+import { Mushroom } from '../Mushroom'
+import { Cheese }  from '../Cheese'
+import { Tomato } from '../Tomato'
+import './styles.css'
 
 const NUMBER_OF_INGREDIENTS = 5;
 
 const ingredients = {
     tomato: Tomato,
+    onion: Onion,
+    mushroom: Mushroom,
+    bacon: Bacon
 }
 
 const renderIngridient = (name, number = NUMBER_OF_INGREDIENTS) => {
@@ -34,15 +38,18 @@ const renderIngridient = (name, number = NUMBER_OF_INGREDIENTS) => {
 
 const Pizza = () => {
     const tomatoes = renderIngridient('tomato')
+    const bacon = renderIngridient('bacon')
+    const mushrooms = renderIngridient('mushroom')
+    const onions = renderIngridient('onion')
 
     return (
         <div className="pizza">
             <div className="crust" />
-            {tomatoes}
-            <Bacon />
             <Cheese />
-            <Mushroom />
-            <Onion />
+            {tomatoes}
+            {bacon}
+            {mushrooms}
+            {onions}
         </div>
     )
 }
