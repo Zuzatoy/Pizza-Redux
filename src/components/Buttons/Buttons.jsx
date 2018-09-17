@@ -13,15 +13,22 @@ const Buttons = ({ ingredients, toggleIngredient }) => (
         >
             {ingredients.bacon ? 'Remove' : 'Add'} bacon
         </button>
-        <button className="button button3">Remove bacon</button>
-        <button className="button button1">Add cheese</button>
-        <button className="button button3">Remove cheese</button>
-        <button className="button button1">Add onion</button>
-        <button className="button button3">Remove onion</button>
-        <button className="button button1">Add mushroom</button>
-        <button className="button button3">Remove mushroom</button>
-        <button className="button button1">Add tomato</button>
-        <button className="button button3">Remove tomato</button>
+        <button className="button button1"
+        onClick={() => toggleIngredient(ingredients.cheese, 'cheese')}
+        > {ingredients.cheese ? 'Remove' : 'Add'} cheese
+        </button>
+        <button className="button button1"
+        onClick={() => toggleIngredient(ingredients.onion, 'onion')}
+        > {ingredients.onion ? 'Remove' : 'Add'} onion
+        </button>
+        <button className="button button1"
+        onClick={() => toggleIngredient(ingredients.mushroom, 'mushroom')}
+        > {ingredients.mushroom ? 'Remove' : 'Add'} mushroom
+        </button>
+        <button className="button button1"
+        onClick={() => toggleIngredient(ingredients.tomato, 'tomato')}
+        > {ingredients.tomato ? 'Remove' : 'Add'} tomato
+        </button>
     </div>
 )
 
