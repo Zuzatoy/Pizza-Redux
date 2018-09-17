@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Onion } from '../Onion'
 import { Bacon } from '../Bacon'
 import { Mushroom } from '../Mushroom'
-import { Cheese }  from '../Cheese'
+import { Cheese } from '../Cheese'
 import { Tomato } from '../Tomato'
 
 import './styles.css'
@@ -38,20 +38,18 @@ const renderIngridient = (name, number = NUMBER_OF_INGREDIENTS) => {
     )
 }
 
-const Pizza = ({ ingredients }) => {
-    const {
-        bacon,
-        cheese,
-        mushroom,
-        onion,
-        tomato,
-    } = ingredients;
-    const tomatoes = renderIngridient('tomato')
-    const bacons = renderIngridient('bacon')
-    const mushrooms = renderIngridient('mushroom')
-    const onions = renderIngridient('onion')
+const tomatoes = renderIngridient('tomato');
+const bacons = renderIngridient('bacon');
+const mushrooms = renderIngridient('mushroom');
+const onions = renderIngridient('onion');
 
-    return (
+const Pizza = ({
+    bacon,
+    cheese,
+    mushroom,
+    onion,
+    tomato,
+}) => (
         <div className="pizza">
             <div className="crust" />
             {cheese && <Cheese />}
@@ -61,10 +59,9 @@ const Pizza = ({ ingredients }) => {
             {onion && onions}
         </div>
     )
-}
 
 const mapStateToProps = (state) => ({
-    ingredients: state.ingredients
-}) 
+    ...state.ingredients
+})
 
 export default connect(mapStateToProps)(Pizza)
