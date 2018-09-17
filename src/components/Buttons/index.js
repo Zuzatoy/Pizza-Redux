@@ -1,3 +1,3 @@
-import Buttons from './Bacon';
+import Buttons from './Buttons';
 
 export { Buttons };

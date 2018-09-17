@@ -6,6 +6,7 @@ import { Bacon } from '../Bacon'
 import { Mushroom } from '../Mushroom'
 import { Cheese }  from '../Cheese'
 import { Tomato } from '../Tomato'
+
 import './styles.css'
 
 const NUMBER_OF_INGREDIENTS = 5;

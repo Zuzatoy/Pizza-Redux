@@ -1,14 +1,19 @@
 import React from 'react';
-import './App.css';
-import { Pizza } from '../Pizza'
-import Buttons from '../Buttons/Buttons';
+import { Provider } from 'react-redux'
 
+import { store } from '../../store/configureStore';
+import { Pizza } from '../Pizza'
+import { Buttons } from '../Buttons';
+
+import './App.css';
 
 const App = () => (
-  <div className="App">
-    <Buttons />
-    <Pizza />
-  </div>
+  <Provider store={store}>
+    <div className="App">
+      <Buttons />
+      <Pizza />
+    </div>
+  </Provider>
 );
 
 export default App;

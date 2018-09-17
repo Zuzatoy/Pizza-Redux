@@ -1,60 +1,49 @@
+.mushroom {
+  position:absolute;
+  z-index:1;
+}
 .mushroom-1{
-    height:40px;
-    width:90px;
-    border-radius: 90px 90px 0 0;
-    background:#b49989;
-    position:absolute;
-    top:50px;
-   left:300px;
-   transform:rotate(20deg);
-   z-index:1;
-  }
+  top:50px;
+  left:300px;
+  transform:rotate(20deg);
+}
 
-  
-  .mushroom-2{
-    height:40px;
-    width:90px;
-    border-radius: 90px 90px 0 0;
-    background:#b49989;
-    position:absolute;
-    top:150px;
-    left:200px;
-    transform:rotate(-60deg);
-   z-index:1;
- }
+.mushroom-2{
+  top:200px;
+  left:200px;
+  transform:rotate(-60deg);
+}
 
- .mushroom-3{
-    height:40px;
-    width:90px;
-    border-radius: 90px 90px 0 0;
-    background:#b49989;
-    position:absolute;
-    top:150px;
-    left:100px;
-   z-index:1;
- }
+.mushroom-3 {
+  top:150px;
+  left:100px;
+}
 
- .mushroom-4{
-    height:40px;
-    width:90px;
-    border-radius: 90px 90px 0 0;
-    background:#b49989;
-    position:absolute;
-    top:300px;
-    left:50px;
-    transform:rotate(-60deg);
-   z-index:1;
- }
+.mushroom-4{
+  top:300px;
+  left:50px;
+  transform:rotate(-60deg);
+}
 
- 
- .mushroom-5{
-    height:40px;
-    width:90px;
-    border-radius: 90px 90px 0 0;
-    background:#b49989;
-    position:absolute;
-    top:350px;
-    left:200px;
-    transform:rotate(170deg);
- z-index:1;
- }
+.mushroom-5{
+  top:350px;
+  left:350px;
+  transform:rotate(170deg);
+}
+
+.cup {
+  height:40px;
+  width:90px;
+  border-radius: 90px 90px 0 0;
+  background:#b49989;
+  position:absolute;
+}
+
+.stem {
+  height:50px;
+  width:30px;
+  background:#c3b5ae;
+  position:absolute;
+  left: 30px;
+  top: 40px;
+}
